@@ -1,0 +1,31 @@
+{
+    "name": "anlewo/yii2-widget-tabgridview",
+    "description": "多个tab切换的gridview带加载中的并且固定head和自适应表格变化",
+    "keywords": ["gridview","tab","loading",'fixedHeader'],
+    "homepage": "http://www.baidu.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "张洪波",
+            "email": "shawnzhang@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "taobao1875@163.com"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "anlewo\\tabgridview\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
