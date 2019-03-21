@@ -3,9 +3,7 @@
 一个封装了tab选项卡异步加载gridview的插件
 
 api接口文档扩展插件图片鉴赏
-![](https://github.com/CoderShawnZhang/apiview/blob/master/img/1.png)
-![](https://github.com/CoderShawnZhang/apiview/blob/master/img/2.png)
-![](https://github.com/CoderShawnZhang/apiview/blob/master/img/3.png)
+![](https://github.com/CoderShawnZhang/yii2-widget-tabgridview/blob/master/img/1.png)
 
 # 使用方式：
 ```php
