@@ -14,6 +14,7 @@ class Module extends \yii\base\Module
      */
     public $controllerNamespace = 'anlewo\tabgridview\controllers';
 
+    public $getListSearchModel = '';
     /**
      * @inheritdoc
      */
