@@ -15,8 +15,9 @@ class IndexController extends BaseController
     public function actionIndex($tabId)
     {
         $searchModel = new \Yii::$app->controller->module->getListSearchModel;
+        $dataProvider = new \Yii::$app->controller->module->getDataProvider.'()';
         $searchModel->load(\Yii::$app->request->get());
-        $dataProvider = $searchModel->search();
+        $dataProvider = $searchModel->$dataProvider;
         return $this->renderAjax('Gridview',[
             'searchModel'=>$searchModel,
             'dataProvider' => $dataProvider,
