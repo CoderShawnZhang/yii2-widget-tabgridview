@@ -1,7 +1,6 @@
 <div class="box-header"></div>
 <div class="box box-solid no-mb">
     <?php
-    $columns = \anlewo\tabgridview\views\index\listColumns::getColumns($searchModel);
     $item = [
         'id' => 'state'.Yii::$app->request->get('tabId',1),
         'pjax' => false,
@@ -12,7 +11,7 @@
             'class' => 'anlewo\tabgridview\widgets\LinkPager',
             'template' => '<div class="box-footer clearfix pagination-box"><div class="pull-right"><div class="form-inline">{summary}{pageButtons}</div></div></div>',
         ],
-        'columns'=>$columns
+        'columns'=>$gridViewColumns
     ];
     echo kartik\grid\GridView::widget($item);
     ?>

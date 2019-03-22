@@ -15,7 +15,6 @@ class TabGridViewWidget extends Widget
 
     public $opts;
 
-
     public function init()
     {
         $this->opts = \yii\helpers\Json::htmlEncode([

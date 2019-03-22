@@ -11,7 +11,7 @@ $this->registerJs($this->render('javascript/_index_script.js'));
     <ul class="nav nav-tabs" id="navTabs">
         <?php foreach ($tabArray as $key => $val): ?>
             <li>
-                <a href="<?= Url::toRoute(ArrayHelper::merge(['/tabGridView/index/index', 'tabId' => $key],Yii::$app->request->get()))?>" data-target="#tab_<?= $key ?>"><?=$val?></a>
+                <a href="<?= Url::toRoute(ArrayHelper::merge(['/tabGridView/index/index', 'tabId' => $key,'gridViewColumns' => $val['columns'],'searchClass' => $val['searchClass']],Yii::$app->request->get()))?>" data-target="#tab_<?= $key ?>"><?=$val['title']?></a>
             </li>
         <?php endforeach; ?>
     </ul>
