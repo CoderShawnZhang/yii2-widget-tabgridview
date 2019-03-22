@@ -12,12 +12,11 @@ use admin\Modules\Index\models\SearchOrder;
 
 class IndexController extends BaseController
 {
-    public function actionIndex($tabId)
+    public function actionIndex()
     {
         $searchModel = new \Yii::$app->controller->module->getListSearchModel;
-        $dataProvider = new \Yii::$app->controller->module->getDataProvider.'()';
         $searchModel->load(\Yii::$app->request->get());
-        $dataProvider = $searchModel->$dataProvider;
+        $dataProvider = $searchModel->search();
         return $this->renderAjax('Gridview',[
             'searchModel'=>$searchModel,
             'dataProvider' => $dataProvider,

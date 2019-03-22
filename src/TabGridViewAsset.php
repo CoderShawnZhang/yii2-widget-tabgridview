@@ -14,10 +14,13 @@ class TabGridViewAsset extends AssetBundle
 {
     public $sourcePath = '@anlewo/tabgridview/assets';
 
-    public $css = [];
+    public $css = [
+        'css/style.css',
+    ];
 
     public $js = [
         'js/fixedHead.js',
+        'js/request.js',
     ];
 
     public $depends = [];
